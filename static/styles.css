@@ -22,7 +22,7 @@ body{
     font-size: 1em;
     cursor: pointer;
     text-align: center;
-    transition: background linear 0.5s, color linear 0.5s;
+    transition: background linear 0.3s, color linear 0.3s;
     -webkit-appearance: none;
     -moz-appearance: none;
     margin-bottom: 10px;
