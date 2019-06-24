@@ -37,20 +37,24 @@ body{
     outline: 0;
 }
 
+.grid-container{
+    width: 24vw;
+    height: 24vw;
+    border: 1px solid #dfdfdf;
+}
+
 .square {
-    width: 6vw;
-    height: 6vw;
-    max-width: 6.5vw;
-    max-height: 6.5vw;
+    width: var(--element-width);
+    height: var(--element-height);
 }
 
 .inactive {
-    border: 1px solid #dfdfdf;
+    /* border: 1px solid #dfdfdf; */
     background:#ffffff;
 }
 
 .active {
-    border: 1px solid var(--element-border);
+    /* border: 1px solid var(--element-border); */
     background: var(--element-background);
 }
 

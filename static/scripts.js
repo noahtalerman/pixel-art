@@ -11,11 +11,16 @@ let numRows = 1;
 if (gridSize === 'error') {
 }
 else {
+    let height = (100 * (1 / gridSize)) + '%';
+    let width = height;
+    console.log(height);
     const createRow = () => {
         for (let i = 0; i < gridSize; i++) {
-            const sqr = document.createElement('div');
+            let sqr = document.createElement('div');
             sqr.classList.add('square');
             sqr.classList.add('inactive');
+            sqr.style.setProperty('--element-height', height)
+            sqr.style.setProperty('--element-width', width)
             // sqr.style.borderBottom = '0px';
             // if (i !== 0){
             //     sqr.style.borderLeft = '0px';
@@ -24,33 +29,31 @@ else {
         }
     }
 
-    const createLastRow = () => {
-        for (let i = 0; i < gridSize; i++) {
-            const sqr = document.createElement('div');
-            sqr.classList.add('square');
-            sqr.classList.add('inactive');
-            // if (i !== 0){
-            //     sqr.style.borderLeft = '0px';
-            // }
-            gridContainer.appendChild(sqr);
-        }
-    }
-    for (let i = 1; i < gridSize; i++) {
+    // const createLastRow = () => {
+    //     for (let i = 0; i < gridSize; i++) {
+    //         const sqr = document.createElement('div');
+    //         sqr.classList.add('square');
+    //         sqr.classList.add('inactive');
+    //         // if (i !== 0){
+    //         //     sqr.style.borderLeft = '0px';
+    //         // }
+    //         gridContainer.appendChild(sqr);
+    //     }
+    // }
+    for (let i = 0; i < gridSize; i++) {
         createRow();
         ++numRows;
     }
-    createLastRow();
+    // createLastRow();
 }
 
 let sqrWidth = document.querySelector('.square').getBoundingClientRect().width;
 let rowWidth = (numRows) * sqrWidth;
-gridContainer.style.width = rowWidth;
 gridContainer.style.flexWrap = 'wrap';
 
 const resizeRow = () => {
     sqrWidth = document.querySelector('.square').getBoundingClientRect().width;
     rowWidth = (numRows) * sqrWidth;
-    gridContainer.style.width = rowWidth;
 }
 const body = document.querySelector('body');
 body.onresize = resizeRow;
