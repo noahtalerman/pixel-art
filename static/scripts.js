@@ -7,6 +7,10 @@ const gridContainer = document.querySelector('.grid-container');
 gridContainer.style.display = 'flex';
 gridContainer.style.justifyContent = 'center';
 
+container.addEventListener('mouseenter', function() {
+    document.querySelector('.direction-text').style.opacity = '0';
+});
+
 let numRows = 1;
 if (gridSize === 'error') {
 }

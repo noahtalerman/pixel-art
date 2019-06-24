@@ -5,6 +5,13 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.direction-text{
+    position: absolute;
+    transition: opacity linear 0.5s;
+    opacity: 1;
+    font-size: 1em;
+}
+
 .input-container {
     display: flex;
     flex-direction: column;
