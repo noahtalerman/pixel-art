@@ -10,7 +10,7 @@ def mainPage():
     }
     if request.method == 'POST':
         gridSize = request.form["input-number"]
-        if int(gridSize) < 2 or int(gridSize) > 14:
+        if int(gridSize) < 2 or int(gridSize) > 20:
             data = {
                 "grid-size": session['grid-size'],
                 "error": "yes"
