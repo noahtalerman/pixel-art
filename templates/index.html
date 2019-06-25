@@ -12,9 +12,6 @@
     <title>pixxel art</title>
 </head>
 <body>
-    <div class="direction-text">
-        hover over the square to draw
-    </div>
     <div class="input-container">
         <button class="refresh-btn">clean</button>
         <form action="/" method='POST' autocomplete="off">
@@ -25,10 +22,26 @@
                 </label>
             </span>
         </form>
+        <div class="color-select">
+            <span class="selected select select-1">purple</span>
+            <span class="select select-2">green</span>
+            <span class="select select-3">pink</span>
+            <span class="select select-4">orange</span>
+        </div>
     </div>
     <div class="container">
         <div class="grid-container"></div>
     </div>
+    <div class="direction-text">
+         hover over the square to draw
+         <div class="colors-container">
+                <div class="color-sqr sqr-1"></div>
+                <div class="color-sqr sqr-2"></div>
+                <div class="color-sqr sqr-3"></div>
+                <div class="color-sqr sqr-4"></div>
+        </div>
+        <span class="dimensions">{{data['grid-size']}} x {{data['grid-size']}}</span>
+     </div>
     
     <script src="{{ url_for('static', filename='scripts.js')}}"></script>
 </body>

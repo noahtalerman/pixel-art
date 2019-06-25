@@ -3,12 +3,7 @@ body{
     flex-direction: column;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-}
-
-.direction-text{
-    position: absolute;
-    opacity: 1;
-    font-size: 2vw;
+    margin: 0;
 }
 
 .input-container {
@@ -43,6 +38,15 @@ body{
     outline: 0;
 }
 
+.select:hover {
+    color: #dfdfdf;
+    cursor: pointer;
+}
+
+.selected {
+    color: #dfdfdf;
+}
+
 .grid-container{
     width: 24vw;
     height: 24vw;
@@ -69,4 +73,21 @@ form{
     margin: 0;
     justify-content: center;
     background: transparent;
+}
+
+.direction-text {
+    opacity: 1;
+    font-size: 4.9vw;
+    width: 20vw;
+    position: absolute;
+}
+
+.colors-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.dimensions {
+    font-size: 4.9vw;
 }
