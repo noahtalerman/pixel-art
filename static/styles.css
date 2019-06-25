@@ -7,9 +7,8 @@ body{
 
 .direction-text{
     position: absolute;
-    transition: opacity linear 0.5s;
     opacity: 1;
-    font-size: 1em;
+    font-size: 2vw;
 }
 
 .input-container {

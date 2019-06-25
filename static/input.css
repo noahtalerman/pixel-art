@@ -50,7 +50,8 @@
 	display: block;
 	padding: 1.6em 0;
     width: 100%;
-    text-align: center;
+	text-align: center;
+	transition: opacity linear 0.5s;
 }
 
 .graphic {
