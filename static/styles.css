@@ -4,6 +4,7 @@ body{
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    font-size: 1em;
 }
 
 .input-container {
@@ -27,6 +28,7 @@ body{
     -webkit-appearance: none;
     -moz-appearance: none;
     margin-bottom: 10px;
+    font-family: Montserrat;
 }
 
 .refresh-btn:hover {

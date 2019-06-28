@@ -4,11 +4,6 @@ container.style.display = 'flex';
 container.style.justifyContent = 'center';
 container.style.alignItems = 'center';
 
-// hide directional text when user hovers over container
-// container.addEventListener('mouseenter', function() {
-//     document.querySelector('.direction-text').style.opacity = '0';
-// });
-
 const gridContainer = document.querySelector('.grid-container');
 gridContainer.style.display = 'flex';
 gridContainer.style.justifyContent = 'center';
@@ -119,7 +114,7 @@ selects.forEach(select => select.addEventListener('click', function(){
     else if (select == orangeSelect){
         select.classList.add('selected');
     }
-}))
+}));
 
 sqrs.forEach(sqr => sqr.addEventListener('mouseenter', function(){
     let selectedColor = document.querySelector('.selected');
