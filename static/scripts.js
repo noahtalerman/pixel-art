@@ -157,7 +157,7 @@ const inputBox = document.querySelector('.input');
 document.addEventListener('click', function(e) {
     const inputField = document.querySelector('.input__field');
     let isClickInside = inputField.contains(e.target);
-    inputLabel.textContent = 'Enter an integer between 2 & 20';
+    inputLabel.textContent = 'enter an integer between 2 & 20';
     if (!isClickInside) {
         inputLabel.textContent = 'height x width';
     }
