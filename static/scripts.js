@@ -159,7 +159,7 @@ document.addEventListener('click', function(e) {
     let isClickInside = inputField.contains(e.target);
     inputLabel.textContent = 'Enter an integer between 2 & 20';
     if (!isClickInside) {
-        inputLabel.textContent = 'Height x Width';
+        inputLabel.textContent = 'height x width';
     }
 });
 
