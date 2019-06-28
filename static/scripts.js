@@ -155,7 +155,7 @@ const inputBox = document.querySelector('.input');
 
 // text under input bar is toggled back when user clicks outside form
 document.addEventListener('click', function(e) {
-    let inputField = document.querySelector('.input__field');
+    const inputField = document.querySelector('.input__field');
     let isClickInside = inputField.contains(e.target);
     inputLabel.textContent = 'Enter an integer between 2 & 20';
     if (!isClickInside) {
@@ -163,3 +163,10 @@ document.addEventListener('click', function(e) {
     }
 });
 
+inputBox.addEventListener('mouseenter', function(){
+    inputLabel.style.color = '#dfdfdf'
+});
+
+inputBox.addEventListener('mouseleave', function(){
+    inputLabel.style.color = '#261100'
+});
