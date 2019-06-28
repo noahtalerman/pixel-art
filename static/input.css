@@ -33,7 +33,7 @@
 	float: right;
 	width: 40%;
 	color: #6a7989;
-	font-size: 100%;
+	font-size: 70%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-touch-callout: none;
@@ -79,7 +79,7 @@
 .input__label--yoko {
 	position: relative;
 	width: 100%;
-	color: #000000;
+	color: #261100;
     text-align: left;
     opacity: 1;
     transition: opacity linear 1s;
@@ -92,29 +92,29 @@
 	left: 0;
 	width: 100%;
 	height: 3em;
-	background: #000000;
+	background: #261100;
 	-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
 	transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
 	-webkit-transform-origin: 50% 100%;
 	transform-origin: 50% 100%;
 	-webkit-transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
+	transition: transform 0.5s;
 }
 
 .input__label--yoko::after {
     content: '';
     text-align: center;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: #000000;
-	-webkit-transform-origin: 50% 0%;
-	transform-origin: 50% 0%;
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-	z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #261100;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.5s;
+    z-index: 10;
+    position: absolute;
 }
 
 .input__label-content--yoko {
