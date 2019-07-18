@@ -44,7 +44,7 @@ body{
 .color-select {
     flex-direction: column;
     display: flex;
-    font-size: 2em;
+    font-size: 3vw;
 }
 
 .select:hover {
