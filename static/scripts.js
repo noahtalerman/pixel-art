@@ -158,7 +158,7 @@ document.addEventListener('click', function(e) {
     let isClickInside = inputField.contains(e.target);
     inputLabel.textContent = 'enter an integer between 2 & 20';
     if (!isClickInside) {
-        inputLabel.textContent = 'height x width';
+        inputLabel.textContent = 'change grid size';
     }
 });
 
