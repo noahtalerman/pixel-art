@@ -10,15 +10,16 @@ def mainPage():
     }
     if request.method == 'POST':
         gridSize = request.form["input-number"]
-        if int(gridSize) < 2 or int(gridSize) > 20:
+        if int(gridSize) < 2 or int(gridSize) > 50:
             data = {
                 "grid-size": session['grid-size'],
-                "error": "yes"
+                "valid": "no"
             }
         else:
             session['grid-size'] = gridSize
             data = {
-                "grid-size": session['grid-size']
+                "grid-size": session['grid-size'],
+                "valid": "yes"
             }  
         return render_template('index.html', data=data)
     else:
