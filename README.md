@@ -1,4 +1,4 @@
-# pixxel-art [![Image of pixxel-art favicon](/static/img/fav.png)](https://pixxel-art.herokuapp.com/)
+# pixxel-art [![Image of pixxel-art favicon](/static/img/fav-30px.png)](https://pixxel-art.herokuapp.com/)
 original art generation app by Noah Talerman <br>
 front end development by Noah Talerman <br>
 back end development by Noah Talerman <br>
