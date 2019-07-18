@@ -156,7 +156,7 @@ const inputBox = document.querySelector('.input');
 document.addEventListener('click', function(e) {
     const inputField = document.querySelector('.input__field');
     let isClickInside = inputField.contains(e.target);
-    inputLabel.textContent = 'enter an integer between 2 & 20';
+    inputLabel.textContent = 'enter an integer between 2 & 50';
     if (!isClickInside) {
         inputLabel.textContent = 'change grid size';
     }
