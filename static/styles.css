@@ -4,30 +4,31 @@ body{
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    font-size: 1em;
 }
 
 .input-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-bottom: 5%;
+    position: absolute;
+    right: 0.5%;
+    text-align: right;
+    align-items: flex-end;
 }
 
 .refresh-btn {
     border: 2px solid #261100;
-    margin: 0;
     text-decoration: none;
     background: #ffffff;
     color: #261100;
-    font-size: 1em;
     cursor: pointer;
     text-align: center;
     transition: background linear 0.3s, color linear 0.3s;
     -webkit-appearance: none;
     -moz-appearance: none;
-    margin-bottom: 10px;
+    width: 50%;
+    font-size: 2em;
     font-family: Montserrat;
 }
 
@@ -40,6 +41,12 @@ body{
     outline: 0;
 }
 
+.color-select {
+    flex-direction: column;
+    display: flex;
+    font-size: 2em;
+}
+
 .select:hover {
     color: #dfdfdf;
     cursor: pointer;
@@ -50,8 +57,8 @@ body{
 }
 
 .grid-container{
-    width: 24vw;
-    height: 24vw;
+    width: 40vw;
+    height: 40vw;
     border: 1px solid #dfdfdf;
 }
 
@@ -72,8 +79,9 @@ body{
 
 form{
     display: flex;
-    margin: 0;
-    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-items: flex-end;
     background: transparent;
 }
 
@@ -83,6 +91,7 @@ form{
     width: 20vw;
     position: absolute;
     color: #261100;
+    left: 0.5%;
 }
 
 .colors-container {

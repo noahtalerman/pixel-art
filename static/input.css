@@ -2,10 +2,10 @@
 	position: relative;
 	z-index: 1;
 	display: inline-grid;
-	margin: 1em;
-	max-width: 350px;
-    vertical-align: top;
-    justify-items: center;
+	margin: 0;
+	max-width: 200px;
+	vertical-align: top;
+	justify-items: center;
 }
 
 .input__field {
@@ -48,8 +48,8 @@
 	position: relative;
 	display: block;
 	padding: 1.6em 0;
-    width: 100%;
-	text-align: center;
+	width: 100%;
+	text-align: right;
 	transition: opacity linear 0.5s;
 }
 
@@ -72,17 +72,17 @@
 	color: #f5f5f5;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-    text-align: center;
+	transition: opacity 0.3s;
+	text-align: center;
 }
 
 .input__label--yoko {
 	position: relative;
 	width: 100%;
 	color: #261100;
-    text-align: left;
-    opacity: 1;
-    transition: opacity linear 1s;
+	text-align: left;
+	opacity: 1;
+	transition: opacity linear 1s;
 }
 
 .input__label--yoko::before {
