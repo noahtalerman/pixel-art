@@ -131,12 +131,11 @@ sqrs.forEach(sqr => sqr.addEventListener('mouseenter', function(){
     else if (selectedColor == orangeSelect){
         colors = orangeColors;
     }
-    console.log(colors);
     let random_color = colors[Math.floor(Math.random() * colors.length)];
     this.style.setProperty('--element-background', random_color);
     this.style.setProperty('--element-border', random_color);
-    this.classList.toggle('inactive');
-    this.classList.toggle('active');
+    this.classList.remove('inactive');
+    this.classList.add('active');
 }));
 
 const clearBoard = () => {
