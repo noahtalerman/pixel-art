@@ -1,3 +1,4 @@
+# pixxel-art
 original art generation app by Noah Talerman <br>
 front end development by Noah Talerman <br>
 back end development by Noah Talerman <br>
