@@ -28,7 +28,7 @@ body{
     -webkit-appearance: none;
     -moz-appearance: none;
     width: 50%;
-    font-size: 2em;
+    font-size: 3vw;
     font-family: Montserrat;
 }
 
@@ -83,6 +83,7 @@ form{
     margin-bottom: 20px;
     align-items: flex-end;
     background: transparent;
+    width: 25vw;
 }
 
 .direction-text {
