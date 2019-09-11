@@ -2,7 +2,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
     margin: 0;
 }
 
@@ -10,13 +18,16 @@ body{
     position: absolute;
     top: 5px;
     right: 0.5%;
-    font-style: italic;
-    font-size: 2vw;
     /* -moz-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
     -o-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     transform: scale(-1, 1); */
+}
+
+.header h1 {
+    font-style: italic;
+    font-size: 2vw;
 }
 
 .input-container {
@@ -101,11 +112,15 @@ form{
 
 .direction-text {
     opacity: 1;
-    font-size: 4.9vw;
     width: 20vw;
     position: absolute;
-    color: #261100;
     left: 0.5%;
+}
+
+.direction-text p {
+    font-size: 4.9vw;
+    font-weight: 400;
+    color: #261100;
 }
 
 .colors-container {
